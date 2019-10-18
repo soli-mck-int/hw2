@@ -40,6 +40,10 @@ ws.Cells(c, 10).Interior.ColorIndex = 4
 Else
 ws.Cells(c, 10).Interior.ColorIndex = 3
 End If
+If ws.Cells(c, 15).Value - ws.Cells(c, 14).Value =0 Then
+ws.Cells(c, 10).Value=0
+ws.Cells(c, 11).Value
+End If
 Next c
 Next ws
 End Sub
